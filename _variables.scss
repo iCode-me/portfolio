@@ -1,0 +1,22 @@
+// variables
+
+// colors
+$text-color: #ffff;
+
+// small text box
+@mixin textbox {
+  border: 1px solid $text-color;
+  width: 130px;
+  height: 25px;
+  margin: 50px;
+  padding: 20px;
+}
+
+// large text box
+@mixin large-textbox {
+  border: 1px solid $text-color;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 50px;
+}
