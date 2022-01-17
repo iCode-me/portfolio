@@ -1,0 +1,33 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #070707;
+  color: $text-color;
+} 
+
+.text-box {
+ @include textbox();
+}
+
+p {
+  margin: 50px;
+  text-align: justify;
+
+}
+
+.text-box-large {
+ @include large-textbox();
+
+  li {
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 65px;
+    padding-top: 22px;
+  }
+}
+
+
+
