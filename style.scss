@@ -13,11 +13,12 @@ html {
 }
 
 // Home styling
-#home {}
+
 nav {
   color: $text-color;
   list-style: none;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .navigation {
@@ -57,7 +58,7 @@ img {
 }
 
 // About styling 
-
+#about {
 .text-box {
   @include textbox();
  }
@@ -79,8 +80,23 @@ img {
    }
  }
  
+}
 
+// Portfolio styling
 
+#portfolio {
+
+  .text-box {
+    @include textbox();
+   }
+  .project-box {
+    border: 1px solid $text-color;
+    width: 130px;
+    height: 130px;
+    margin: 50px;
+    padding: 20px;
+  }
+}
 
 
 
