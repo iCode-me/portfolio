@@ -1,12 +1,19 @@
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   background-color: #070707;
   font-family: Arial, Helvetica, sans-serif;
+  color: $text-color;
 }
 
+// Home styling
+#home {}
 nav {
   color: $text-color;
   list-style: none;
@@ -48,6 +55,31 @@ p {
 img {
   width: 100vw;
 }
+
+// About styling 
+
+.text-box {
+  @include textbox();
+ }
+ 
+ p {
+   margin: 50px;
+   text-align: justify;
+ 
+ }
+ 
+ .text-box-large {
+  @include large-textbox();
+ 
+   li {
+     list-style-type: none;
+     padding: 15px;
+     padding-left: 65px;
+     padding-top: 22px;
+   }
+ }
+ 
+
 
 
 

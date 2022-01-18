@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   background-color: #070707;
   font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
 }
 
 nav {
@@ -45,4 +50,31 @@ p {
 
 img {
   width: 100vw;
+}
+
+.text-box {
+  border: 1px solid #ffff;
+  width: 130px;
+  height: 25px;
+  margin: 50px;
+  padding: 20px;
+}
+
+p {
+  margin: 50px;
+  text-align: justify;
+}
+
+.text-box-large {
+  border: 1px solid #ffff;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 50px;
+}
+.text-box-large li {
+  list-style-type: none;
+  padding: 15px;
+  padding-left: 65px;
+  padding-top: 22px;
 }
