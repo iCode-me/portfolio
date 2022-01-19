@@ -4,8 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -24,37 +22,40 @@ nav {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
+  justify-content: space-around;
+  padding: 10px;
 
-nav > ul > li {
+  li {
   display: inline-block;
-}
+  }
 
-nav > ul > li > a {
+   a {
+  transition: all 0.3s ease 0s;
   text-decoration: none;
+   }
+
+   a:hover {
+     color: rgb(118, 118, 118);
+   }
 }
 
 h1 {
   color: $text-color;
-  font-size: 70px;
+  font-size: 68px;
   align-items: center;
   margin-left: 25px;
   margin-top: 150px;
-}
-
-.text {
-  width: 95vw;
+  width: 450px;
 }
 
 p {
   color: $text-color;
   text-align: center;
-  font-size: 23px;
+  width: 440px;
+  font-size: 22px;
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin-left: 18px;
+  margin-bottom: 25px;
 }
 
 img {
@@ -99,7 +100,7 @@ img {
     border: 1px solid $text-color;
     width: 100px;
     height: 100px;
-    margin: 40px;
+    margin: 50px;
     padding: 20px;
   }
 
@@ -141,7 +142,7 @@ img {
    
   .text-box-large {
     @include large-textbox();
-    margin-bottom: 380px;
+    margin-bottom: 420px;
 
    .name-field {
     border: 1px solid $text-color;
