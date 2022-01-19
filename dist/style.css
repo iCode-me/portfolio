@@ -14,7 +14,6 @@ nav {
   color: #ffff;
   list-style: none;
   font-size: 30px;
-  text-decoration: none;
 }
 
 .navigation {
@@ -27,6 +26,7 @@ nav {
 
 nav > ul > li {
   display: inline-block;
+  text-decoration: none;
 }
 
 h1 {
@@ -128,5 +128,10 @@ img {
   width: 60px;
   height: 30px;
   margin-top: 15px;
+  margin-left: 120px;
+}
+
+footer img {
+  width: 250px;
   margin-left: 120px;
 }
