@@ -15,29 +15,30 @@
 
   <!-- Nav Bar -->
 
-  <nav>
-    <ul class="navigation">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>    
-  </nav> 
+<div class="container">
+  <section id ="home">
+    <nav>
+      <ul class="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>    
+    </nav> 
 
   <!-- Main content for Home-->
 
-  <div id ="home">
     <div class="text">
       <h1>Allan Shrestha</h1>
     </div> 
       <p>full stack software developer {}</p>
     
     <img src="mypic.jpg" alt="Picture of Allan">
-  </div>
+  </section>
 
   <!-- Main content for About -->
 
-  <div id = "about">
+  <section id = "about">
     <div class="text-box"> 
       <h2>ABOUT ME</h2>
     </div> 
@@ -53,59 +54,74 @@
           <li>GIT/GITHUB</li>
         </ul>
     </div>
+  </section>
 
   <!-- Main content for Portfolio -->
 
-  <div id = "portfolio">
+  <section id = "portfolio">
     <div class="text-box">
       <h2>PORTFOLIO</h2>
-  </div>
+    </div>
 
-    <section>
-      <div class="project-box">
+    <div id = "project-area">
+      <div class="project-box box1">
         <h3>PROJECT 1</h3>
       </div>  
 
-      <div class="project-box">
+      <div class="project-box box2">
         <h3>PROJECT 2</h3>
       </div> 
 
-      <div class="project-box">
+      <div class="project-box box3">
         <h3>PROJECT 3</h3>
       </div> 
 
-      <div class="project-box">
+      <div class="project-box box4">
         <h3>PROJECT 4</h3>
-     </div> 
-    </section> 
+      </div> 
+
+      <div class="project-box box5">
+        <h3>PROJECT 5</h3>
+      </div> 
+
+      <div class="project-box box6">
+        <h3>PROJECT 6</h3>
+      </div> 
+    </div>  
+
+  </section>   
+   
 
   <!-- Main content for Contact -->
 
-  <div id = "contact">
+  <section id = "contact">
     <div class="text-box">
       <h2>CONTACT</h2>
-  </div>
+    </div>
 
   <!-- Form box -->
 
-  <div class="text-box-large">
-    <h3>HAVE A QUESTION?</h3>
+    <div class="text-box-large">
+      <h3>HAVE A QUESTION?</h3>
+      
+      <div class="name-field">name:</div>
+
+      <div class="email-field">email:</div>
+
+      <div class="message-field">message:</div>
+
+      <button class="send">send</button>
     
-    <div class="name-field">name:</div>
-
-    <div class="email-field">email:</div>
-
-    <div class="message-field">message:</div>
-
-    <button class="send">send</button>
-  
-  </div>
+    </div>
 
   <!-- Social media icons -->
 
-  <footer>
-    <img src="icons.jpg" alt="picture of social media icons">
-  </footer>
+    <footer>
+      <img src="icons.jpg" alt="picture of social media icons">
+    </footer>
 
+  </section>
+
+</div>  
 </body>
 </html>

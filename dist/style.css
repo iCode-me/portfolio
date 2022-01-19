@@ -20,8 +20,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 nav > ul > li {
@@ -53,7 +53,7 @@ p {
 }
 
 img {
-  width: 500px;
+  width: 495px;
 }
 
 #about .text-box {
@@ -92,8 +92,30 @@ img {
   border: 1px solid #f3f3f7;
   width: 130px;
   height: 130px;
-  margin: 50px;
+  margin: 40px;
   padding: 20px;
+}
+#portfolio #project-area {
+  display: grid;
+  grid-template-areas: "one two" "three four" "five six";
+}
+#portfolio .box1 {
+  grid-area: one;
+}
+#portfolio .box2 {
+  grid-area: two;
+}
+#portfolio .box3 {
+  grid-area: three;
+}
+#portfolio .box4 {
+  grid-area: four;
+}
+#portfolio .box5 {
+  grid-area: five;
+}
+#portfolio .box6 {
+  grid-area: six;
 }
 
 #contact .text-box {
@@ -103,7 +125,14 @@ img {
   margin: 50px;
   padding: 20px;
 }
-#contact .name-field {
+#contact .text-box-large {
+  border: 1px solid #f3f3f7;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 50px;
+}
+#contact .text-box-large .name-field {
   border: 1px solid #f3f3f7;
   width: 130px;
   height: 20px;
@@ -111,14 +140,14 @@ img {
   padding: 10px;
   padding-right: 158px;
 }
-#contact .email-field {
+#contact .text-box-large .email-field {
   border: 1px solid #f3f3f7;
   width: 130px;
   height: 20px;
   padding: 10px;
   padding-right: 158px;
 }
-#contact .message-field {
+#contact .text-box-large .message-field {
   border: 1px solid #f3f3f7;
   width: 130px;
   height: 20px;
@@ -126,7 +155,7 @@ img {
   padding-right: 158px;
   padding-bottom: 100px;
 }
-#contact .send {
+#contact .text-box-large .send {
   border: 1px solid #f3f3f7;
   width: 60px;
   height: 30px;

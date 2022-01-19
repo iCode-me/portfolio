@@ -24,8 +24,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 nav > ul > li {
@@ -57,7 +57,7 @@ p {
 }
 
 img {
-  width: 500px;
+  width: 495px;
 }
 
 // About styling 
@@ -96,17 +96,48 @@ img {
     border: 1px solid $text-color;
     width: 130px;
     height: 130px;
-    margin: 50px;
+    margin: 40px;
     padding: 20px;
   }
+
+  #project-area {
+    display: grid;
+    grid-template-areas: 
+    'one two'
+    'three four'
+    'five six'
+  }
+  .box1{
+    grid-area: one;
+  }
+  .box2{
+    grid-area: two;
+  }
+  .box3{
+    grid-area: three;
+  }
+  .box4{
+    grid-area: four;
+  }
+  .box5{
+    grid-area: five;
+  }
+  .box6{
+    grid-area: six;
+  }
+
+  
 }
-
+  
 #contact {
-
+  
   .text-box {
     @include textbox();
    }
    
+  .text-box-large {
+    @include large-textbox();
+
    .name-field {
     border: 1px solid $text-color;
     width: 130px;
@@ -139,7 +170,8 @@ img {
      height: 30px;
      margin-top: 15px;
      margin-left: 120px;
-  }
+   }
+}
 }
 
 footer {
