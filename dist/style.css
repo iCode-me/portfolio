@@ -11,7 +11,7 @@ html {
 }
 
 #home {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 nav {
@@ -170,7 +170,7 @@ img {
   height: 300px;
   padding: 20px;
   margin: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
 #contact .text-box-large .name-field {
   border: 1px solid #f3f3f7;
@@ -266,11 +266,6 @@ footer img {
   }
 
   .form-box {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer {
     display: flex;
     justify-content: center;
   }
