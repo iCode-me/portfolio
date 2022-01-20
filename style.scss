@@ -15,7 +15,7 @@ html {
 // Home styling
 
 #home {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 nav {
   position: fixed;
@@ -174,7 +174,7 @@ img {
 
   .text-box-large {
     @include large-textbox();
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 
     .name-field {
       border: 1px solid $text-color;
@@ -287,11 +287,6 @@ footer {
     }
 
     .form-box {
-      display: flex;
-      justify-content: center;
-    }
-
-    .footer {
       display: flex;
       justify-content: center;
     }
