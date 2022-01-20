@@ -107,6 +107,12 @@ img {
   padding: 20px;
   margin: 50px;
 }
+#about .text-box-large .tech-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95vw;
+}
 #about .text-box-large li {
   list-style-type: none;
   padding: 15px;
@@ -201,11 +207,16 @@ img {
   height: 30px;
   margin-top: 15px;
   margin-left: 120px;
+  font-size: 18px;
 }
 
 footer img {
-  width: 250px;
-  margin-left: 120px;
+  width: 120px;
+  margin: auto;
+}
+footer .icon {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

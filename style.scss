@@ -48,9 +48,6 @@ nav {
     width: 95vw;
   }
 }
-// header.sticky ul {
-//   background:rgb(255, 255, 255)
-// }
 
 .navigation {
   display: flex;
@@ -111,6 +108,13 @@ img {
 
   .text-box-large {
     @include large-textbox();
+
+  .tech-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+  }    
 
     li {
       list-style-type: none;
@@ -208,16 +212,23 @@ img {
       height: 30px;
       margin-top: 15px;
       margin-left: 120px;
+      font-size: 18px;
     }
   }
 }
 
 footer {
   img {
-    width: 250px;
-    margin-left: 120px;
+    width: 120px;
+    margin: auto;
   }
+
+  .icon {
+    display: flex;
+    justify-content: center;
 }
+} 
+
 
 @media (max-width: 768px) {
   .navigation {
@@ -290,8 +301,6 @@ footer {
       display: flex;
       justify-content: center;
     }
-    
-  }
-  
-  
 
+    
+}
