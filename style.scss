@@ -8,35 +8,67 @@ html {
   margin: 0;
   padding: 0;
   background-color: #070707;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $text-color;
 }
 
 // Home styling
 
+#home {
+  margin-top: 50px;
+}
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: $text-color;
   list-style: none;
   font-size: 30px;
 }
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+
+    &__text {
+      width: 45vw;
+    }
+    &__image {
+      width: 45vw;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95vw;
+  }
+}
+// header.sticky ul {
+//   background:rgb(255, 255, 255)
+// }
 
 .navigation {
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: flex-end;
 
   li {
-  display: inline-block;
+    display: inline-block;
   }
 
-   a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-   }
+  a {
+    position: relative;
+    transition: 0.5s;
+    text-decoration: none;
+  }
 
-   a:hover {
-     color: rgb(118, 118, 118);
-   }
+  a:hover {
+    color: rgb(118, 118, 118);
+  }
 }
 
 h1 {
@@ -46,6 +78,7 @@ h1 {
   margin-left: 25px;
   margin-top: 150px;
   width: 450px;
+  transition: 0.5s;
 }
 
 p {
@@ -53,49 +86,49 @@ p {
   text-align: center;
   width: 440px;
   font-size: 22px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   margin-left: 18px;
   margin-bottom: 25px;
 }
 
 img {
-  width: 480px;
+  width: 485px;
 }
 
-// About styling 
+// About styling
 #about {
-.text-box {
-  @include textbox();
- }
- 
- p {
-   width: 80vw;
-   margin: 50px;
-   text-align: justify;
- 
- }
- 
- .text-box-large {
-  @include large-textbox();
- 
-   li {
-     list-style-type: none;
-     padding: 15px;
-     padding-left: 65px;
-     padding-top: 22px;
-   }
- }
- 
+  padding-top: 30px;
+
+  .text-box {
+    @include textbox();
+  }
+
+  p {
+    width: 80vw;
+    margin: 50px;
+    text-align: justify;
+  }
+
+  .text-box-large {
+    @include large-textbox();
+
+    li {
+      list-style-type: none;
+      padding: 15px;
+      padding-left: 65px;
+      padding-top: 22px;
+    }
+  }
 }
 
 // Portfolio styling
 
 #portfolio {
-  
+  padding-top: 30px;
 
   .text-box {
     @include textbox();
-   }
+  }
   .project-box {
     border: 1px solid $text-color;
     width: 100px;
@@ -104,80 +137,79 @@ img {
     padding: 20px;
   }
 
-  #project-area {
+  .project-area {
     display: grid;
-   
-    grid-template-areas: 
-    'one two'
-    'three four'
-    'five six'
+
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
   }
-  .box1{
+  .box1 {
     grid-area: one;
   }
-  .box2{
+  .box2 {
     grid-area: two;
   }
-  .box3{
+  .box3 {
     grid-area: three;
   }
-  .box4{
+  .box4 {
     grid-area: four;
   }
-  .box5{
+  .box5 {
     grid-area: five;
   }
-  .box6{
+  .box6 {
     grid-area: six;
   }
-
-  
 }
-  
+
 #contact {
-  
+  padding-top: 30px;
+
   .text-box {
     @include textbox();
-   }
-   
+  }
+
   .text-box-large {
     @include large-textbox();
-    margin-bottom: 420px;
+    margin-bottom: 150px;
 
-   .name-field {
-    border: 1px solid $text-color;
-    width: 130px;
-    height: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    padding-right: 158px;
-   }
+    .name-field {
+      border: 1px solid $text-color;
+      width: 130px;
+      height: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      padding-right: 158px;
+    }
 
-   .email-field {
-    border: 1px solid $text-color;
-    width: 130px;
-    height: 20px;
-    padding: 10px;
-    padding-right: 158px;
-   }
+    .email-field {
+      border: 1px solid $text-color;
+      width: 130px;
+      height: 20px;
+      padding: 10px;
+      padding-right: 158px;
+    }
 
-   .message-field {
-    border: 1px solid $text-color;
-    width: 130px;
-    height: 20px;
-    padding: 10px;
-    padding-right: 158px;
-    padding-bottom: 100px;
-   }
+    .message-field {
+      border: 1px solid $text-color;
+      width: 130px;
+      height: 20px;
+      padding: 10px;
+      padding-right: 158px;
+      padding-bottom: 100px;
+    }
 
-   .send {
-     border: 1px solid $text-color;
-     width: 60px;
-     height: 30px;
-     margin-top: 15px;
-     margin-left: 120px;
-   }
-}
+    .send {
+      border: 1px solid $text-color;
+      width: 60px;
+      height: 30px;
+      margin-top: 15px;
+      margin-left: 120px;
+    }
+  }
 }
 
 footer {
@@ -187,12 +219,84 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 
+    li {
+      display: inline-block;
+    }
+
+    a {
+      position: relative;
+      transition: 0.5s;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(118, 118, 118);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .navigation li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    margin-top: 250px;
+    transition: 0.5s;
+  }
+
+  #about {
+    .text-box-large {
+      width: 50vw;
+    }
+  }
+
+  #portfolio {
+    .project-area {
+      display: grid;
+      grid-template-areas:
+        "one two three"
+        "four five six";
+    }
+    .box1 {
+      grid-area: one;
+    }
+    .box2 {
+      grid-area: two;
+    }
+    .box3 {
+      grid-area: three;
+    }
+    .box4 {
+      grid-area: four;
+    }
+    .box5 {
+      grid-area: five;
+    }
+    .box6 {
+      grid-area: six;
+    }
+    }
+
+    .form-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
   
-
-
-
-
-
-
+  
 

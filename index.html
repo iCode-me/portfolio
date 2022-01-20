@@ -1,125 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="dist/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
 
-  <!-- Nav Bar -->
-
-  <section id="home">
+    <section id="home">
       <nav>
-          <ul class="navigation">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>    
+        <ul class="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
 
-      <section class="banner"></section>
+      <!-- <script type="text/javascript">
+      window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>  -->
 
-  <!-- Main content for Home-->
-    
-      <h1>Allan Shrestha</h1>
-      <p>full stack software developer {}</p>
-    
-    <img src="mypic.jpg" alt="Picture of Allan">
-  </section>
+      <!-- Main content for Home-->
+      <header class="header">
+        <div class="header__text">
+          <h1>Allan Shrestha</h1>
+          <p>full stack software developer {}</p>
+        </div>
+        <div class="header__image">
+          <img src="mypic.jpg" alt="Picture of Allan" />
+        </div>
+      </header>
+    </section>
 
-  <!-- Main content for About -->
+    <!-- Main content for About -->
 
-  <section id = "about">
-    <div class="text-box"> 
-      <h2>ABOUT ME</h2>
-    </div> 
-      <p>Hi! My name is Allan and I am a software developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+    <section id="about">
+      <div class="text-box">
+        <h2>ABOUT ME</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+          Hi! My name is Allan and I am a software developer. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum
+        </p>
 
-    <div class="text-box-large">
-      <h2>SKILLS</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JAVASCRIPT</li>
-          <li>BASH</li>
-          <li>GIT/GITHUB</li>
-        </ul>
+        <div class="text-box-large">
+          <h2>SKILLS</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BASH</li>
+            <li>GIT/GITHUB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content for Portfolio -->
+
+    <section id="portfolio">
+      <div class="text-box">
+        <h2>PORTFOLIO</h2>
+      </div>
+
+      <div class="project-area">
+        <div class="project-box box1">
+          <h3>PROJECT 1</h3>
+        </div>
+
+        <div class="project-box box2">
+          <h3>PROJECT 2</h3>
+        </div>
+
+        <div class="project-box box3">
+          <h3>PROJECT 3</h3>
+        </div>
+
+        <div class="project-box box4">
+          <h3>PROJECT 4</h3>
+        </div>
+
+        <div class="project-box box5">
+          <h3>PROJECT 5</h3>
+        </div>
+
+        <div class="project-box box6">
+          <h3>PROJECT 6</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content for Contact -->
+
+    <section id="contact">
+      <div class="text-box">
+        <h2>CONTACT</h2>
+      </div>
+
+      <!-- Form box -->
+      <div class="form-box">
+        <div class="text-box-large">
+          <h3>HAVE A QUESTION?</h3>
+
+          <div class="name-field">name:</div>
+
+          <div class="email-field">email:</div>
+
+          <div class="message-field">message:</div>
+
+          <button class="send">send</button>
+        </div>
+      </div>
+      <!-- Social media icons -->
+      <div class="footer">
+      <footer>
+        <img src="icons.jpg" alt="picture of social media icons" />
+      </footer>
     </div>
-  </section>
-
-  <!-- Main content for Portfolio -->
-
-  <section id = "portfolio">
-    <div class="text-box">
-      <h2>PORTFOLIO</h2>
-    </div>
-
-    <div id = "project-area">
-      <div class="project-box box1">
-        <h3>PROJECT 1</h3>
-      </div>  
-
-      <div class="project-box box2">
-        <h3>PROJECT 2</h3>
-      </div> 
-
-      <div class="project-box box3">
-        <h3>PROJECT 3</h3>
-      </div> 
-
-      <div class="project-box box4">
-        <h3>PROJECT 4</h3>
-      </div> 
-
-      <div class="project-box box5">
-        <h3>PROJECT 5</h3>
-      </div> 
-
-      <div class="project-box box6">
-        <h3>PROJECT 6</h3>
-      </div> 
-    </div>  
-
-  </section>   
-   
-
-  <!-- Main content for Contact -->
-
-  <section id = "contact">
-    <div class="text-box">
-      <h2>CONTACT</h2>
-    </div>
-
-  <!-- Form box -->
-
-    <div class="text-box-large">
-      <h3>HAVE A QUESTION?</h3>
-      
-      <div class="name-field">name:</div>
-
-      <div class="email-field">email:</div>
-
-      <div class="message-field">message:</div>
-
-      <button class="send">send</button>
-    
-    </div>
-   
-  <!-- Social media icons -->
-
-    <footer>
-      <img src="icons.jpg" alt="picture of social media icons">
-    </footer>
-
-  </section>
-
-</body>
+    </section>
+  </body>
 </html>
