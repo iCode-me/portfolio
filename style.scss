@@ -183,11 +183,11 @@ img {
 
   .text-box {
     @include textbox();
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .text-box-large {
     @include large-textbox();
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 
     .name-field {
       border: 1px solid $text-color;
@@ -269,10 +269,6 @@ footer {
     }
   }
 
-  .contact-form {
-    display: grid;
-    grid-auto-columns: 2fr 4fr;
-  }
   
 }
 

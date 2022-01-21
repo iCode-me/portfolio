@@ -175,7 +175,7 @@ img {
   height: 25px;
   margin: 50px;
   padding: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 #contact .text-box-large {
   border: 1px solid #f3f3f7;
@@ -183,7 +183,7 @@ img {
   height: 300px;
   padding: 20px;
   margin: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 #contact .text-box-large .name-field {
   border: 1px solid #f3f3f7;
@@ -249,11 +249,6 @@ footer .icon {
   }
   .navigation a:hover {
     color: #767676;
-  }
-
-  .contact-form {
-    display: grid;
-    grid-auto-columns: 2fr 4fr;
   }
 }
 @media (min-width: 769px) {
