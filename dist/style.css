@@ -31,10 +31,10 @@ nav {
     justify-content: space-between;
     width: 95vw;
   }
-  header__text {
+  header .text {
     width: 45vw;
   }
-  header__image {
+  header .image {
     width: 45vw;
   }
 
@@ -236,6 +236,11 @@ footer .icon {
   }
   .navigation a:hover {
     color: #767676;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-auto-columns: 2fr 4fr;
   }
 }
 @media (min-width: 769px) {
