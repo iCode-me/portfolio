@@ -27,37 +27,6 @@ html {
     font-size: 30px;
   }
 }
-@media (min-width: 769px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95vw;
-
-    .text {
-      width: 45vw;
-
-    }
-
-    h1 {
-      background-color: transparent;
-    }
-
-    p {
-      background-color: transparent;
-    }
-    .image {
-      width: 45vw;
-    }
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 95vw;
-  }
-}
 
 .navigation {
   display: flex;
@@ -91,10 +60,9 @@ h1 {
 p {
   color: $text-color;
   text-align: center;
-  width: 440px;
-  font-size: 22px;
+  width: 540px;
   font-family: "Courier New", Courier, monospace;
-  margin-left: 18px;
+  margin-left: 8px;
   margin-bottom: 25px;
 }
 
@@ -240,16 +208,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
-  header {
-    h1 {
-      background-color: transparent;
-    }
-
-    p {
-      background-color: transparent;
-    }
-  }
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -270,10 +228,29 @@ footer {
     }
   }
 
-  
+  header {
+    h1 {
+      background-color: transparent;
+    }
+
+    p {
+      background-color: transparent;
+      font-size: 22px;
+      width: 462px;
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
 }
 
 @media (min-width: 769px) {
+  .navigation li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   header {
     display: flex;
@@ -283,10 +260,11 @@ footer {
 
     .text {
       width: 45vw;
-
     }
 
     h1 {
+      width: 50vw;
+      font-size: 80px;
       margin-top: 250px;
       transition: 0.5s;
       background-color: transparent;
@@ -294,31 +272,30 @@ footer {
 
     p {
       background-color: transparent;
+      font-size: 26px;
     }
+    img {
+      width: 700px;
+    }
+
     .image {
-      width: 45vw;
+      display: flex;
+      justify-content: end;
     }
   }
 
-  .navigation li {
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 95vw;
-  }
- 
   #about {
     .text-box-large {
       width: 50vw;
+
+      .about-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 95vw;
+      }
     }
   }
-
   #portfolio {
     .project-area {
       display: grid;
@@ -350,5 +327,4 @@ footer {
     display: flex;
     justify-content: center;
   }
-
 }

@@ -23,33 +23,6 @@ html {
   font-size: 30px;
 }
 
-@media (min-width: 769px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95vw;
-  }
-  header .text {
-    width: 45vw;
-  }
-  header h1 {
-    background-color: transparent;
-  }
-  header p {
-    background-color: transparent;
-  }
-  header .image {
-    width: 45vw;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 95vw;
-  }
-}
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -79,10 +52,9 @@ h1 {
 p {
   color: #f3f3f7;
   text-align: center;
-  width: 440px;
-  font-size: 22px;
+  width: 540px;
   font-family: "Courier New", Courier, monospace;
-  margin-left: 18px;
+  margin-left: 8px;
   margin-bottom: 25px;
 }
 
@@ -226,13 +198,6 @@ footer .icon {
 }
 
 @media (max-width: 768px) {
-  header h1 {
-    background-color: transparent;
-  }
-  header p {
-    background-color: transparent;
-  }
-
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -249,8 +214,26 @@ footer .icon {
   .navigation a:hover {
     color: #767676;
   }
+
+  header h1 {
+    background-color: transparent;
+  }
+  header p {
+    background-color: transparent;
+    font-size: 22px;
+    width: 462px;
+  }
+  header img {
+    width: 100vw;
+  }
 }
 @media (min-width: 769px) {
+  .navigation li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   header {
     display: flex;
     flex-direction: row;
@@ -261,32 +244,32 @@ footer .icon {
     width: 45vw;
   }
   header h1 {
+    width: 50vw;
+    font-size: 80px;
     margin-top: 250px;
     transition: 0.5s;
     background-color: transparent;
   }
   header p {
     background-color: transparent;
+    font-size: 26px;
+  }
+  header img {
+    width: 700px;
   }
   header .image {
-    width: 45vw;
-  }
-
-  .navigation li {
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .about-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 95vw;
+    justify-content: end;
   }
 
   #about .text-box-large {
     width: 50vw;
+  }
+  #about .text-box-large .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95vw;
   }
 
   #portfolio .project-area {
