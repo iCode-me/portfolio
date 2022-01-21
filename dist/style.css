@@ -34,6 +34,12 @@ nav {
   header .text {
     width: 45vw;
   }
+  header h1 {
+    background-color: transparent;
+  }
+  header p {
+    background-color: transparent;
+  }
   header .image {
     width: 45vw;
   }
@@ -221,6 +227,13 @@ footer .icon {
 }
 
 @media (max-width: 768px) {
+  header h1 {
+    background-color: transparent;
+  }
+  header p {
+    background-color: transparent;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
