@@ -13,8 +13,7 @@ html {
 #home {
   padding-top: 50px;
 }
-
-nav {
+#home nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,27 +23,6 @@ nav {
   font-size: 30px;
 }
 
-@media (min-width: 769px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95vw;
-  }
-  header__text {
-    width: 45vw;
-  }
-  header__image {
-    width: 45vw;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 95vw;
-  }
-}
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -74,10 +52,9 @@ h1 {
 p {
   color: #f3f3f7;
   text-align: center;
-  width: 440px;
-  font-size: 22px;
+  width: 540px;
   font-family: "Courier New", Courier, monospace;
-  margin-left: 18px;
+  margin-left: 8px;
   margin-bottom: 25px;
 }
 
@@ -169,6 +146,7 @@ img {
   height: 25px;
   margin: 50px;
   padding: 20px;
+  margin-bottom: 100px;
 }
 #contact .text-box-large {
   border: 1px solid #f3f3f7;
@@ -176,7 +154,7 @@ img {
   height: 300px;
   padding: 20px;
   margin: 50px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 #contact .text-box-large .name-field {
   border: 1px solid #f3f3f7;
@@ -236,6 +214,18 @@ footer .icon {
   .navigation a:hover {
     color: #767676;
   }
+
+  header h1 {
+    background-color: transparent;
+  }
+  header p {
+    background-color: transparent;
+    font-size: 22px;
+    width: 462px;
+  }
+  header img {
+    width: 100vw;
+  }
 }
 @media (min-width: 769px) {
   .navigation li {
@@ -244,13 +234,42 @@ footer .icon {
     padding-right: 20px;
   }
 
-  h1 {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  header .text {
+    width: 45vw;
+  }
+  header h1 {
+    width: 50vw;
+    font-size: 80px;
     margin-top: 250px;
     transition: 0.5s;
+    background-color: transparent;
+  }
+  header p {
+    background-color: transparent;
+    font-size: 26px;
+  }
+  header img {
+    width: 700px;
+  }
+  header .image {
+    display: flex;
+    justify-content: end;
   }
 
   #about .text-box-large {
     width: 50vw;
+  }
+  #about .text-box-large .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95vw;
   }
 
   #portfolio .project-area {
