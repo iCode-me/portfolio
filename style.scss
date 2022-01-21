@@ -174,11 +174,11 @@ img {
 
   .text-box {
     @include textbox();
+    margin-bottom: 120px;
   }
-
   .text-box-large {
     @include large-textbox();
-    margin-bottom: 110px;
+    margin-bottom: 200px;
 
     .name-field {
       border: 1px solid $text-color;

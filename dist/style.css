@@ -169,6 +169,7 @@ img {
   height: 25px;
   margin: 50px;
   padding: 20px;
+  margin-bottom: 120px;
 }
 #contact .text-box-large {
   border: 1px solid #f3f3f7;
@@ -176,7 +177,7 @@ img {
   height: 300px;
   padding: 20px;
   margin: 50px;
-  margin-bottom: 110px;
+  margin-bottom: 200px;
 }
 #contact .text-box-large .name-field {
   border: 1px solid #f3f3f7;
